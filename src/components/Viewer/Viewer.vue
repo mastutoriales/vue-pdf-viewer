@@ -66,7 +66,6 @@
 <script>
 import * as Vue from 'vue'
 import * as PDF from 'pdfjs-dist/legacy/build/pdf.mjs'
-import PDFWorker from 'pdfjs-dist/legacy/build/pdf.worker.mjs'
 import IFrameV3 from '../IFrame/IFrameV3'
 import IFrame from '../IFrame/IFrame.vue'
 import throttle from '../../utils/throttle'
@@ -83,7 +82,7 @@ const version =
   (window.Vue && window.Vue.version) ||
   '2.x'
 const VUE_VERSION = Number(version.split('.')[0])
-PDF.GlobalWorkerOptions.workerPort = new PDFWorker()
+PDF.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${PDF.version}/legacy/build/pdf.worker.min.mjs`
 
 const MARGIN_OFFSET = 20
 const NORMAL_RATIO = 2
