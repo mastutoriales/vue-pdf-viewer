@@ -61,7 +61,7 @@ const baseConfig = {
         ],
       },
       {
-        test: /\.worker\.js$/,
+        test: /\.worker\.m?js$/,
         loader: 'worker-loader',
         options: {
           inline: 'fallback',

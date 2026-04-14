@@ -1,7 +1,7 @@
 {
-  "name": "pdf-viewer-vue",
-  "version": "0.2.8",
-  "description": "PDF viewer component for Vue 2 and Vue 3",
+  "name": "pdf-viewer-vue-legacy",
+  "version": "0.4.2",
+  "description": "Security-maintained fork of DingRui12138/vue-pdf-viewer for dependency updates",
   "keywords": [
     "vue",
     "vuejs",
@@ -16,7 +16,15 @@
   ],
   "license": "MIT",
   "author": "Wayne (371377785@qq.com)",
-  "repository": "https://github.com/DingRui12138/vue-pdf-viewer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mastutoriales/vue-pdf-viewer.git"
+  },
+  "homepage": "https://github.com/mastutoriales/vue-pdf-viewer",
+  "bugs": {
+    "url": "https://github.com/mastutoriales/vue-pdf-viewer/issues"
+  },
+  "originalRepository": "https://github.com/DingRui12138/vue-pdf-viewer",
   "scripts": {
     "test": "webpack -v",
     "build": "webpack build --progress",
@@ -25,7 +33,7 @@
     "lint:fix": "eslint src/** --fix"
   },
   "dependencies": {
-    "pdfjs-dist": "2.12.313"
+    "pdfjs-dist": "^4.2.67"
   },
   "devDependencies": {
     "@babel/core": "^7.14.2",

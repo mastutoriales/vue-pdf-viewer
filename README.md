@@ -1,8 +1,16 @@
-# 📄 pdf-viewer-vue
+# pdf-viewer-vue-legacy
 
 PDF viewer component for Vue 2 and Vue 3
 
-[![npm](https://img.shields.io/npm/v/pdf-viewer-vue)](https://npmjs.com/package/pdf-viewer-vue) [![npm](https://img.shields.io/npm/dw/pdf-viewer-vue)](https://npmjs.com/package/pdf-viewer-vue) [![Github Repo stars](https://img.shields.io/github/stars/DingRui12138/vue-pdf-viewer)](https://github.com/DingRui12138/vue-pdf-viewer) [![npm](https://img.shields.io/npm/l/pdf-viewer-vue)](https://github.com/DingRui12138/vue-pdf-viewer/blob/master/LICENSE)
+## Maintenance Notice
+
+This repository is a fork of the original project: [DingRui12138/vue-pdf-viewer](https://github.com/DingRui12138/vue-pdf-viewer).
+
+Fork maintained at: [mastutoriales/vue-pdf-viewer](https://github.com/mastutoriales/vue-pdf-viewer).
+
+Scope of this fork is security and dependency updates only. Active feature development is not part of the maintenance plan.
+
+[![npm](https://img.shields.io/npm/v/pdf-viewer-vue-legacy)](https://npmjs.com/package/pdf-viewer-vue-legacy) [![npm](https://img.shields.io/npm/dw/pdf-viewer-vue-legacy)](https://npmjs.com/package/pdf-viewer-vue-legacy) [![Github Repo stars](https://img.shields.io/github/stars/DingRui12138/vue-pdf-viewer)](https://github.com/DingRui12138/vue-pdf-viewer) [![npm](https://img.shields.io/npm/l/pdf-viewer-vue-legacy)](https://github.com/DingRui12138/vue-pdf-viewer/blob/master/LICENSE)
 
 ## Compatibility
 
@@ -14,18 +22,18 @@ Depending on the environment, the package can be installed in one of the followi
 
 ```shell
 
-npm install pdf-viewer-vue
+npm install pdf-viewer-vue-legacy
 
 ```
 
 ```shell
 
-yarn add pdf-viewer-vue
+yarn add pdf-viewer-vue-legacy
 
 ```
 
 ```html
-<script src="https://unpkg.com/pdf-viewer-vue"></script>
+<script src="https://unpkg.com/pdf-viewer-vue-legacy"></script>
 ```
 
 ## Usage
@@ -52,10 +60,10 @@ yarn add pdf-viewer-vue
 </template>
 
 <script>
-import PDFViewer from 'pdf-viewer-vue'
+import PDFViewer from 'pdf-viewer-vue-legacy'
 
 // OR THE FOLLOWING IMPORT FOR VUE 2
-// import PDFViewer from 'pdf-viewer-vue/dist/vue2-pdf-viewer'
+// import PDFViewer from 'pdf-viewer-vue-legacy/dist/vue2-pdf-viewer'
 
 export default {
   components: {

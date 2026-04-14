@@ -65,8 +65,8 @@
 
 <script>
 import * as Vue from 'vue'
-import * as PDF from 'pdfjs-dist/legacy/build/pdf.js'
-import PDFWorker from 'pdfjs-dist/legacy/build/pdf.worker.js'
+import * as PDF from 'pdfjs-dist/legacy/build/pdf.mjs'
+import PDFWorker from 'pdfjs-dist/legacy/build/pdf.worker.mjs'
 import IFrameV3 from '../IFrame/IFrameV3'
 import IFrame from '../IFrame/IFrame.vue'
 import throttle from '../../utils/throttle'
@@ -280,7 +280,8 @@ export default {
         const documentLoadingTask = PDF.getDocument({
           url: this.source,
           cMapPacked: true,
-          cMapUrl: 'https://unpkg.com/browse/pdfjs-dist@2.2.228/cmaps/',
+          cMapUrl: `https://unpkg.com/pdfjs-dist@${PDF.version}/cmaps/`,
+          isEvalSupported: false,
         })
         documentLoadingTask.onPassword = (callback, reason) => {
           const retry = reason === PDF.PasswordResponses.INCORRECT_PASSWORD
