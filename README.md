@@ -64,6 +64,7 @@ import PDFViewer from 'pdf-viewer-vue-legacy'
 
 // OR THE FOLLOWING IMPORT FOR VUE 2
 // import PDFViewer from 'pdf-viewer-vue-legacy/dist/vue2-pdf-viewer'
+// import PDFViewer from 'pdf-viewer-vue-legacy/dist'
 
 export default {
   components: {

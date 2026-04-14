@@ -1,6 +1,6 @@
 {
   "name": "pdf-viewer-vue-legacy",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Security-maintained fork of DingRui12138/vue-pdf-viewer for dependency updates",
   "keywords": [
     "vue",
@@ -8,6 +8,15 @@
     "pdf"
   ],
   "main": "dist/vue3-pdf-viewer.js",
+  "module": "dist/vue3-pdf-viewer.js",
+  "unpkg": "dist/vue3-pdf-viewer.js",
+  "jsdelivr": "dist/vue3-pdf-viewer.js",
+  "exports": {
+    ".": "./dist/vue3-pdf-viewer.js",
+    "./dist": "./dist/index.js",
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
   "typings": "types/index.d.ts",
   "files": [
     "dist/*",
@@ -28,6 +37,8 @@
   "scripts": {
     "test": "webpack -v",
     "build": "webpack --env target=vue2 --progress && webpack --env target=vue3 --progress",
+    "postbuild": "node scripts/write-dist-index.js",
+    "prepublishOnly": "npm run build",
     "serve": "webpack serve --config webpack.dev.config.js --hot",
     "lint": "eslint src/**",
     "lint:fix": "eslint src/** --fix"
